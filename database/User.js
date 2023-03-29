@@ -13,8 +13,9 @@ const UserSchema =mongoose.Schema({
     password:{
         type: String,
         required:true
-    }
-    
+    },
+    resetToken:String,
+    resetTokenExpiration:Date
 }, {timestamp:true}
 );
 
